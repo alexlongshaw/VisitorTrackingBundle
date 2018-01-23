@@ -184,11 +184,7 @@ class Lifetime
         return $seed->getValue();
     }
 
-    /**
-     * @param string $name
-     * @return bool
-     */
-    public function hasSeed($name)
+    public function hasSeed(string $name): bool
     {
         foreach ($this->seeds as $seed) {
             if ($seed->getName() === $name) {
